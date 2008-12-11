@@ -1,0 +1,6 @@
+Il faut une clef et un cookie. 
+____ Expirations à déterminer, générations à sniffer. ____
+
+On peut changer sa voile avec un update.php?voile=X 
+
+On peut changer son cap avec un update.php?cap=X&currentCap=Y avec X et Y en degrés.
