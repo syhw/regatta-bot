@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><scenario>
+  <project dataMap="Mercator_large_res.data" />
+  <parcoursList>
+    <parcours name="Vendee Globe" id="e0c89feb-5460-4c82-99f7-6bbfc674f900" exportDataMap="False">
+      <start latitude="46.441613" longitude="-1.888275" date="2008-11-09 13:02:00" town="Sables d Olonne" />
+      <stop latitude="46.441613" longitude="-1.888275" date="2009-03-09 14:00:00" town="" />
+      <pilotBoat>
+        <checkpoint latitude="43.500752" longitude="-10.898437" />
+        <checkpoint latitude="32.879587" longitude="-19.797363" />
+        <checkpoint latitude="15.114553" longitude="-20.500488" />
+        <checkpoint latitude="3.92317" longitude="-18.28537" />
+        <checkpoint latitude="-38.802795" longitude="14.118805" />
+        <checkpoint latitude="-58.309489" longitude="79.920044" />
+        <checkpoint latitude="-58.309489" longitude="89" />
+      </pilotBoat>
+      <checkpoints>
+        <checkpoint latitude="-42" longitude="1" orientation="90" indicateur="false" visible="true" id_group="1" />
+        <checkpoint latitude="-42" longitude="11" orientation="270" indicateur="false" visible="true" id_group="1" />
+        <checkpoint latitude="-33.367237" longitude="19.786377" orientation="180" indicateur="false" id_group="1" />
+        <checkpoint latitude="-46" longitude="25" orientation="90" indicateur="false" visible="true" id_group="2" />
+        <checkpoint latitude="-46" longitude="34" orientation="270" indicateur="false" visible="true" id_group="2" />
+        <checkpoint latitude="-53.1" longitude="73.5" orientation="0" indicateur="false" visible="true" id_group="3" />
+        <checkpoint latitude="-47" longitude="103" orientation="90" indicateur="false" visible="true" id_group="4" />
+        <checkpoint latitude="-47" longitude="113" orientation="270" indicateur="false" visible="true" id_group="4" />
+        <checkpoint latitude="-34.36" longitude="115.1" orientation="180" indicateur="false" visible="false" id_group="4" />
+        <checkpoint latitude="-52" longitude="136" orientation="90" indicateur="false" visible="true" id_group="5" />
+        <checkpoint latitude="-52" longitude="147" orientation="270" indicateur="false" visible="true" id_group="5" />
+        <checkpoint latitude="-50.5" longitude="-179.9" orientation="90" indicateur="false" visible="true" id_group="6" />
+        <checkpoint latitude="-50.5" longitude="-170" orientation="270" indicateur="false" visible="true" id_group="6" />
+        <checkpoint latitude="-50.5" longitude="-151" orientation="90" indicateur="false" visible="true" id_group="7" />
+        <checkpoint latitude="-50.5" longitude="-141" orientation="270" indicateur="false" visible="true" id_group="7" />
+        <checkpoint latitude="-52" longitude="-121" orientation="90" indicateur="false" visible="true" id_group="8" />
+        <checkpoint latitude="-52" longitude="-110" orientation="270" indicateur="false" visible="true" id_group="8" />
+        <checkpoint latitude="-51.662334" longitude="-71.784668" orientation="180" indicateur="false" id_group="9" />
+      </checkpoints>
+      <parameters endZoneSize="30" nbHoursBeforeSignupOpened="1080" starterBoatHourLength="1080" fuelStockAtStart="0" pointEquilibreMoteur="80" vitesseCroisiere="30" consoFuelHeure="0" reductionConsommationVoiles="0" tonnesFuelToSeconds="0" assistanceCoeffTemps="0" quizzReponseTemps="0" />
+      <events>
+        <event name="TitrePanneCarburant" mapChar="2" hitMinHitSpeed="0" hitPercentRate="0" blockingTime="0" priority="4" coefSpeed="0" fuelDiff="0" color="Black" photoFilename="fuel-04.jpg">
+          <description><![CDATA[ DescriptionPanneCarburant ]]></description>
+          <hitText><![CDATA[ DeclencherPanneCarburant ]]></hitText>
+          <zone />
+        </event>
+        <event name="Tempete" mapChar="4" hitMinHitSpeed="0" hitPercentRate="0" blockingTime="0" coefSpeed="1" priority="2" fuelDiff="0" color="Black" photoFilename="event_tempete.swf">
+          <description><![CDATA[ Zone de tempete  ]]></description>
+          <hitText><![CDATA[ Vous etes dans une zone de tempete avec des vents superieur a 50 noeuds. Vous ne pourrez repartir que lorsque les vents seront plus calmes. ]]></hitText>
+          <zone />
+        </event>
+        <event name="Echouement" mapChar="5" hitMinHitSpeed="0" hitPercentRate="0" blockingTime="0" needRegard="1" coefSpeed="1" priority="3" fuelDiff="0" color="Black" photoFilename="event_stop.swf">
+          <description><![CDATA[ DescriptionEchouement ]]></description>
+          <hitText><![CDATA[ Votre bateau est echoue sur les cotes. Repartez dans le sens oppose pour pouvoir reprendre la course. ]]></hitText>
+          <zone />
+        </event>
+        <event name="Voile cassee" mapChar="6" hitMinHitSpeed="0" hitPercentRate="0" blockingTime="0" needRegard="1" priority="1" coefSpeed="100" fuelDiff="0" color="0xFF0000" photoFilename="event_voile_cass.swf">
+          <description><![CDATA[  ]]></description>
+          <hitText><![CDATA[ Une de vos voile est cassee. Utilisez un kit de reparation afin de pouvoir l'utiliser a nouveau. ]]></hitText>
+          <zone>
+          </zone>
+        </event>
+        <event name="Voile reparee" mapChar="7" hitMinHitSpeed="0" hitPercentRate="0" blockingTime="0" needRegard="1" priority="1" coefSpeed="100" fuelDiff="0" color="0xFF0000" photoFilename="event_voile_repar.swf">
+          <description><![CDATA[ ]]></description>
+          <hitText><![CDATA[ Une de vos voile s'est cassee. Un kit de reparation a ete utilise automatiquement pour reparer cette voile. ]]></hitText>
+          <zone>
+          </zone>
+        </event>
+      </events>
+      <questions>
+      </questions>
+      <mail hoursBeforeStartMailSent="0" sendDate="2008-11-09 14:00:00" subject="Depart VG"><![CDATA[ ]]></mail>
+      <links>
+      </links>
+    </parcours>
+  </parcoursList>
+</scenario>

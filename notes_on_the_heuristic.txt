@@ -1,0 +1,21 @@
+- it needs to take gates into account
+
+****************************
+* Every half an hour, search for the fastest [sail+cap] combination to go to checkpoint 1 in the active route
+****************************
+  fastest sail+cap = 
+
+
+****************************
+* Every X hours, define the best route with checkpoints for every meteo changes (0h, 12h, 24h, 36h) and make it active
+****************************
+  best route = 
+
+
+****************************
+* best route to go where ? 
+****************************
+- can aim at the middle of the gates
+- can aim at user-defined checkpoints
+
+

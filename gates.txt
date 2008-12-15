@@ -1,0 +1,8 @@
+1 Porte Atlantique 42 S Entre 01'00 E et 11'00 E 
+2 Porte Kerguelen 46 S Entre 25'00 E et 34'00 E 
+3 Heard Ile Heard 53 73'29
+4 Porte Ouest Australie 47 S Entre 103'00 E et 113'00E 
+5 Porte Est Australie 52 S Entre 136'00 E et 147'00 E 
+6 Porte Nouvelle-Zélande 50'30 S Entre 180'00 et 170'00W 
+7 Porte Ouest Pacifique 50'30 S Entre 151'00 W et 141'00 W 
+8 Porte Est Pacifique 52'00 S Entre 121'00 W et 110'00 W 

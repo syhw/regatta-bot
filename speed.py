@@ -55,27 +55,27 @@ def best(angle):
   i = indice(afoc2, angle)
   (a,b) = parameters(afoc2[i:i+2], foc2[i:i+2])
   sfoc2 = a * angle + b
-  result = ('foc2', sfoc2)
+  result = ('4', sfoc2)
   i = indice(acode0, angle)
   (a,b) = parameters(acode0[i:i+2], code0[i:i+2])
   scode0 = a * angle + b
   if scode0 > result[1]:
-    result = ('code0', scode0)
+    result = ('16', scode0)
   i = indice(aspi, angle)
   (a,b) = parameters(aspi[i:i+2], spi[i:i+2])
   sspi = a * angle + b
   if sspi > result[1]:
-    result = ('spi', sspi)
+    result = ('32', sspi)
   i = indice(agennaker, angle)
   (a,b) = parameters(agennaker[i:i+2], gennaker[i:i+2])
   sgennaker = a * angle + b
   if sgennaker > result[1]:
-    result = ('gennaker', sgennaker)
+    result = ('64', sgennaker)
   i = indice(agenois, angle)
   (a,b) = parameters(agenois[i:i+2], genois[i:i+2])
   sgenois = a * angle + b
   if sgenois > result[1]:
-    result = ('genois', sgenois)
+    result = ('8', sgenois)
   if SHOW_ALL:
     print result
   return result

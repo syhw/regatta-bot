@@ -1,0 +1,5 @@
+foc2  			4
+genois			8
+code0	  		16
+spi		    	32
+gennaker		64
