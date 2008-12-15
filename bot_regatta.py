@@ -1,8 +1,8 @@
 import cookielib, urllib, urllib2
+from bot_commons import *
 
 mail = 'spamygaby@gmail.com'
 password = '100886'
-show_all = 1
 
 cookiejar = cookielib.CookieJar()
 urlOpener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookiejar))
@@ -17,8 +17,10 @@ if not 'PHPSESSID' in [cookie.name for cookie in cookiejar]:
   raise ValueError, "Login failed with login=%s, password=%s" % (mail, password)
 print "We are logged in !"
 
-if show_all:
+if SHOW_ALL:
   for cookie in cookiejar:
     print cookie.name
 
-
+import speed # best(angle) returns ('name_of_the_sail', float(speed))
+speed.best(127)
+  
