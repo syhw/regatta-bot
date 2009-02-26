@@ -1,3 +1,3 @@
 
 clean:
-	rm -rf *~
+	find . -type f -name "*~" -exec rm -v {} \; 
